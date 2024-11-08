@@ -1,0 +1,227 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.container{
+  border: 1px solid black;
+  position: relative;
+  overflow: hidden;
+  height: 70vh;
+  width: 100%;
+}
+.trackContainer{
+  display: flex;
+}
+.track{
+  background: url(Images/track.png) no-repeat;
+  background-repeat: repeat-y;
+  background-size: 100% 100%;
+  width: 40vw;
+  height: 70vh;
+  position: relative;
+  animation-name: trackMove;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+.tree{
+  background: url(Images/tree.png) no-repeat;
+  background-size: 100% 100%;
+  width: 22vw;
+  height: 24vh;
+  position: absolute;
+  left: -12vw;
+  animation-name: treeMove;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+.tree-right{
+  left: 90%;
+  top: 0;
+}
+.btnContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  flex-direction: column;
+}
+button{
+  border: none;
+  background: none;
+  font-size: 7vw;
+  border-bottom: 2px solid black;
+  border-right: 2px solid black;
+  border-radius: 4px;
+  margin-top:2vh; 
+}
+.btnl-r{
+  display: flex;
+  justify-content: space-between;
+  width: 50vw;
+}
+button:active{
+  border: none;
+  border-top: 2px solid black;
+  border-left: 2px solid black;
+}
+#character{
+  background: url(Images/character.gif);
+  width: 22vw;
+  height: 14vh;
+  background-size:100% 100%;
+  position: absolute;
+  top: 80%;
+  left: 5%;
+  transition: 0.2s ease-in;
+}
+.obstacle{
+  background: url(Images/obs2.png);
+  width: 20vw;
+  height: 12vh;
+  background-size:100% 100%;
+  position: absolute;
+  top: 0;
+  left: 73%;
+  animation-name: obsMove;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+@keyframes obsMove{
+  0%{
+    top: -40vh;
+  }
+  100%{
+    top: 100%;
+  }
+}
+@keyframes treeMove{
+  0%{
+    top: -24vh;
+  }
+  100%{
+    top: 100%;
+  }
+}
+@keyframes trackMove{
+  0%{
+ background-position-y: 0vh;
+  }
+  100%{
+ background-position-y: 100vh;
+  }
+}*{
+  margin: 0;
+  padding: 0;
+}
+.container{
+  border: 1px solid black;
+  position: relative;
+  overflow: hidden;
+  height: 70vh;
+  width: 100%;
+}
+.trackContainer{
+  display: flex;
+}
+.track{
+  background: url(Images/track.png) no-repeat;
+  background-repeat: repeat-y;
+  background-size: 100% 100%;
+  width: 40vw;
+  height: 70vh;
+  position: relative;
+  animation-name: trackMove;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+.tree{
+  background: url(Images/tree.png) no-repeat;
+  background-size: 100% 100%;
+  width: 22vw;
+  height: 24vh;
+  position: absolute;
+  left: -12vw;
+  animation-name: treeMove;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+.tree-right{
+  left: 90%;
+  top: 0;
+}
+.btnContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  flex-direction: column;
+}
+button{
+  border: none;
+  background: none;
+  font-size: 7vw;
+  border-bottom: 2px solid black;
+  border-right: 2px solid black;
+  border-radius: 4px;
+  margin-top:2vh; 
+}
+.btnl-r{
+  display: flex;
+  justify-content: space-between;
+  width: 50vw;
+}
+button:active{
+  border: none;
+  border-top: 2px solid black;
+  border-left: 2px solid black;
+}
+#character{
+  background: url(Images/character.gif);
+  width: 22vw;
+  height: 14vh;
+  background-size:100% 100%;
+  position: absolute;
+  top: 80%;
+  left: 5%;
+  transition: 0.2s ease-in;
+}
+.obstacle{
+  background: url(Images/obs2.png);
+  width: 20vw;
+  height: 12vh;
+  background-size:100% 100%;
+  position: absolute;
+  top: 0;
+  left: 73%;
+  animation-name: obsMove;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+@keyframes obsMove{
+  0%{
+    top: -40vh;
+  }
+  100%{
+    top: 100%;
+  }
+}
+@keyframes treeMove{
+  0%{
+    top: -24vh;
+  }
+  100%{
+    top: 100%;
+  }
+}
+@keyframes trackMove{
+  0%{
+ background-position-y: 0vh;
+  }
+  100%{
+ background-position-y: 100vh;
+  }
+}
